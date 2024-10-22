@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    width: 200px;
+}
+
+.controls label {
+    margin-top: 10px;
+}
+
+.controls input[type="range"] {
+    width: 100%;
+}
+
+canvas {
+    border: 1px solid black;
+    flex-grow: 1;
+    background: url('fundo.png') no-repeat center center; /* Fundo da imagem */
+    background-size: cover; /* Ajusta a imagem ao tamanho do canvas */
+    position: relative;
+}
+
+.message {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
